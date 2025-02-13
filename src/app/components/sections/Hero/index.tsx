@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import Bird from '@/../public/svgs/bird.svg'
 import { cn } from '@/lib/utils'
+import Logo from '@/../public/svgs/logo.svg'
+import { Discord } from './icons/Discord'
+import { X } from './icons/X'
 
 export const Hero = () => {
   return (
@@ -25,7 +28,7 @@ export const Hero = () => {
         </div>
       </div>
       {/* Left and Right Gradients */}
-      <div className="absolute inset-0 z-20">
+      <div className="absolute inset-0 z-30">
         <Image
           src="/svgs/left-gradient.svg"
           alt="left gradient"
@@ -33,7 +36,7 @@ export const Hero = () => {
           className="object-cover"
         />
       </div>
-      <div className="absolute inset-0 z-20">
+      <div className="absolute inset-0 z-30">
         <Image
           src="/svgs/right-gradient.svg"
           alt="Right gradient"
@@ -41,8 +44,16 @@ export const Hero = () => {
           className="object-cover"
         />
       </div>
-      {/* Video Overlay */}
       <div className="absolute inset-0 z-30">
+        <Image
+          src="/images/noise.png"
+          alt="Right gradient"
+          fill
+          className="object-cover opacity-20 mix-blend-darken"
+        />
+      </div>
+      {/* Video Overlay */}
+      <div className="absolute inset-0 z-20">
         <video
           className="h-full w-full object-cover opacity-30"
           autoPlay
@@ -50,6 +61,7 @@ export const Hero = () => {
           muted
         >
           <source
+            p-14
             src="/videos/animation-numbers.mp4"
             type="video/mp4"
           />
@@ -61,11 +73,27 @@ export const Hero = () => {
         src={Bird}
         alt="Bird"
         className={cn(
-          'animate-float absolute top-1/2 z-50 -translate-y-1/2',
-          'left-[30%]',
-          'md:left-1/2 md:-translate-x-1/2',
+          'animate-float absolute left-[30%] top-1/2 z-40 -translate-y-1/2 md:left-1/2 md:-translate-x-1/2',
         )}
       />
+      {/* Content */}
+      <div className="absolute inset-0 z-50 h-full w-full p-12">
+        {/* Header */}
+        <div className="flex w-full items-center justify-between">
+          <Image
+            src={Logo}
+            alt="Logo"
+          />
+          <div className="flex items-center gap-3">
+            <button className="group rounded-md border border-light-line bg-dark-gray p-3 transition-all duration-500 ease-in-out hover:bg-green">
+              <X className="h-5 w-5 text-white transition-colors duration-300 ease-in-out group-hover:text-black" />
+            </button>
+            <button className="group rounded-md border border-light-line bg-dark-gray p-3 transition-all duration-500 ease-in-out hover:bg-green">
+              <Discord className="h-5 w-5 text-white transition-colors duration-300 ease-in-out group-hover:text-black" />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

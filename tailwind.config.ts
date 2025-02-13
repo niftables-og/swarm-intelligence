@@ -10,6 +10,8 @@ export default {
     extend: {
       colors: {
         green: '#05D47B',
+        'dark-gray': 'hsla(240, 9%, 18%, 0.3)',
+        'light-line': 'hsla(232, 28%, 83%, 0.12)',
       },
     },
   },
