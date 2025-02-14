@@ -48,4 +48,16 @@ body {
   .animate-float {
     animation: float 3s ease-in-out infinite;
   }
+  @keyframes arrow-move {
+    from {
+      transform: translateX(-20%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .animate-arrows {
+    animation: arrow-move 20s linear infinite;
+  }
 }
