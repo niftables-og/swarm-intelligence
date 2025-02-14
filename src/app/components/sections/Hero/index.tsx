@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import Bird from '@/../public/svgs/bird.svg'
 import { cn } from '@/lib/utils'
@@ -121,7 +122,7 @@ export const Hero = () => {
               href={config.socialMedia.x}
               target="_blank"
             >
-              <button className="group rounded-md border border-light-line bg-dark-gray p-3 transition-all duration-500 ease-in-out hover:bg-green">
+              <button className="border-light-line bg-dark-gray group rounded-md border p-3 transition-all duration-500 ease-in-out hover:bg-green">
                 <X className="h-4 w-4 text-white transition-colors duration-300 ease-in-out group-hover:text-black sm:h-5 sm:w-5" />
               </button>
             </Link>
@@ -129,7 +130,7 @@ export const Hero = () => {
               href={config.socialMedia.telegram}
               target="_blank"
             >
-              <button className="group rounded-md border border-light-line bg-dark-gray p-3 transition-all duration-500 ease-in-out hover:bg-green">
+              <button className="border-light-line bg-dark-gray group rounded-md border p-3 transition-all duration-500 ease-in-out hover:bg-green">
                 <Discord className="h-4 w-4 text-white transition-colors duration-300 ease-in-out group-hover:text-black sm:h-5 sm:w-5" />
               </button>
             </Link>
@@ -138,7 +139,7 @@ export const Hero = () => {
         <div className="relative flex h-full flex-col">
           <h2
             className={cn(
-              'mr-4 w-full max-w-[400px] translate-x-1 font-rogan font-medium text-white ~xs/xl:~text-[1rem]/[2rem] ~xs/xl:~leading-[1.375rem]/[2.2rem]',
+              'font-rogan ~xs/xl:~text-[1rem]/[2rem] ~xs/xl:~leading-[1.375rem]/[2.2rem] mr-4 w-full max-w-[400px] translate-x-1 font-medium text-white',
               'absolute left-[40%] top-[15%] md:left-[60%] md:top-[5%]',
             )}
           >
@@ -148,7 +149,7 @@ export const Hero = () => {
             <br /> since 2017.
           </h2>
           <div className="absolute top-1/2 w-full">
-            <h1 className="font-rogan font-extrabold uppercase text-white ~xs/xl:~text-[3.05rem]/[8rem] ~xs/xl:~leading-[3.05rem]/[8rem]">
+            <h1 className="font-rogan ~xs/xl:~text-[3.05rem]/[8rem] ~xs/xl:~leading-[3.05rem]/[8rem] font-extrabold uppercase text-white">
               <span className="relative mr-2 text-green sm:mr-4">
                 <Image
                   src="/gifs/glow.gif"
@@ -160,13 +161,13 @@ export const Hero = () => {
               </span>
               Intel
             </h1>
-            <h2 className="font-rogan font-bold uppercase text-white ~xs/xl:~text-[1.875rem]/[3.875rem]">
+            <h2 className="font-rogan ~xs/xl:~text-[1.875rem]/[3.875rem] font-bold uppercase text-white">
               elite trading <span className="hidden sm:inline">group</span>
             </h2>
-            <h2 className="-mt-3 font-rogan font-bold uppercase text-white ~xs/xl:~text-[1.875rem]/[3.875rem] sm:hidden">
+            <h2 className="font-rogan ~xs/xl:~text-[1.875rem]/[3.875rem] -mt-3 font-bold uppercase text-white sm:hidden">
               group
             </h2>
-            <button className="relative mt-10 hidden items-center rounded-md bg-black px-2 py-4 font-rogan text-[2rem] font-bold uppercase text-green outline-none focus:outline-none sm:flex">
+            <button className="font-rogan relative mt-10 hidden items-center rounded-md bg-black px-2 py-4 text-[2rem] font-bold uppercase text-green outline-none focus:outline-none sm:flex">
               <span className="group absolute flex h-[65px] w-[65px] items-center justify-center overflow-hidden rounded-md bg-green transition-all duration-700 hover:w-[calc(100%-1rem)]">
                 <div className="animate-arrows hidden gap-5 group-hover:flex">
                   {arrows.map((_, index) => (
@@ -177,14 +178,14 @@ export const Hero = () => {
               </span>
               <span className="pl-40 pr-24">Join now</span>
             </button>
-            <button className="mx-auto mt-16 flex w-full items-center rounded-md border-4 border-main-black bg-green px-4 py-2.5 sm:hidden">
-              <span className="flex-1 font-rogan text-2xl font-bold uppercase text-main-black">
+            <button className="border-main-black mx-auto mt-16 flex w-full items-center rounded-md border-4 bg-green px-4 py-2.5 sm:hidden">
+              <span className="font-rogan text-main-black flex-1 text-2xl font-bold uppercase">
                 Join now
               </span>
               <RightArrow className="h-[18px] w-[18px]" />
             </button>
           </div>
-          <p className="absolute bottom-[10%] right-[2%] hidden font-rogan text-lg font-medium leading-[1.125rem] sm:block">
+          <p className="font-rogan absolute bottom-[10%] right-[2%] hidden text-lg font-medium leading-[1.125rem] sm:block">
             More details are coming soon
           </p>
         </div>
