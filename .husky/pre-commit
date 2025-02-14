@@ -1,0 +1,13 @@
+yarn lint-staged ||
+(
+    echo '❌ Lint-staged failed.'
+    false;
+)
+
+yarn build ||
+(
+    echo '❌ Build failed.';
+    false;
+)
+
+echo '✅ Code verifications successful!'
