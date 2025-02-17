@@ -173,10 +173,12 @@ export const Hero = () => {
         <div className="relative flex h-full flex-col">
           <h2
             className={cn(
-              'mr-4 w-full max-w-[400px] translate-x-1 font-rogan font-medium text-white ~xs/xl:~text-[1rem]/[2rem] ~xs/xl:~leading-[1.375rem]/[2.2rem]',
-              'absolute left-[40%] top-[15%] md:left-[60%] md:top-[5%]',
+              'mr-4 w-full max-w-[420px] translate-x-1 font-rogan font-medium text-white ~xs/xl:~text-[1rem]/[2rem] ~xs/xl:~leading-[1.375rem]/[2.2rem]',
+              'absolute left-[35%] top-[10%] md:left-[60%] md:top-[5%]',
             )}
           >
+            The #1 Exclusive Trading Group,
+            <br />
             Uncovering hidden gems <br />
             with in-depth analysis
             <br /> & strategic market research
@@ -221,7 +223,7 @@ export const Hero = () => {
               <RightArrow className="h-[18px] w-[18px]" />
             </button>
             <p className="mt-4 hidden text-end font-rogan text-lg font-medium leading-[1.125rem] sm:block">
-              More details are coming soon
+              Join the Elite today
             </p>
           </div>
         </div>
