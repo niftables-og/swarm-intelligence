@@ -19,7 +19,7 @@ export const RightArrow = forwardRef<SVGSVGElement, RightArrowProps>(
       <path
         d="M1 1L12 12L1 23"
         stroke="#0B0B0C"
-        stroke-width="2"
+        strokeWidth="2"
       />
     </svg>
   ),

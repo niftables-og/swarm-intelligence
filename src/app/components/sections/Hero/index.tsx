@@ -105,7 +105,7 @@ export const Hero = () => {
               loop
               muted
               playsInline
-              webkit-playsinline
+              webkit-playsinline="true"
             >
               <source
                 src="/videos/animation-numbers.mp4"
@@ -124,7 +124,7 @@ export const Hero = () => {
             loop
             muted
             playsInline
-            webkit-playsinline
+            webkit-playsinline="true"
           >
             <source
               src="/videos/animation-number-full.mp4"
