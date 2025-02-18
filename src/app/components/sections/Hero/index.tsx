@@ -173,7 +173,7 @@ export const Hero = () => {
         <div className="relative flex h-full flex-col">
           <h2
             className={cn(
-              'mr-4 w-full max-w-[420px] translate-x-1 font-rogan font-medium text-white ~xs/xl:~text-[1rem]/[2rem] ~xs/xl:~leading-[1.375rem]/[2.2rem]',
+              'mr-4 w-full max-w-[420px] translate-x-1 font-rogan font-medium leading-[1.1] text-white ~xs/xl:~text-[1rem]/[1.375rem]',
               'absolute left-[35%] top-[10%] md:left-[60%] md:top-[5%]',
             )}
           >
