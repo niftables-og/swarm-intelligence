@@ -205,23 +205,33 @@ export const Hero = () => {
             <h2 className="-mt-3 font-rogan font-bold uppercase text-white ~xs/xl:~text-[1.875rem]/[3.875rem] sm:hidden">
               group
             </h2>
-            <button className="relative mt-10 hidden items-center rounded-md bg-black px-2 py-4 font-rogan text-[2rem] font-bold uppercase text-green outline-none focus:outline-none sm:flex">
-              <span className="group absolute flex h-[65px] w-[65px] items-center justify-center overflow-hidden rounded-md bg-green transition-all duration-700 hover:w-[calc(100%-1rem)]">
-                <div className="animate-arrows hidden gap-5 group-hover:flex">
-                  {arrows.map((_, index) => (
-                    <RightArrow key={index} />
-                  ))}
-                </div>
-                <RightArrow className="group-hover:hidden" />
-              </span>
-              <span className="pl-40 pr-24">Join now</span>
-            </button>
-            <button className="mx-auto mt-[40%] flex w-full items-center rounded-md border-4 border-main-black bg-green px-4 py-2.5 sm:hidden">
-              <span className="flex-1 font-rogan text-2xl font-bold uppercase text-main-black">
-                Join now
-              </span>
-              <RightArrow className="h-[18px] w-[18px]" />
-            </button>
+            <Link
+              href={config.socialMedia.x}
+              target="_blank"
+            >
+              <button className="relative mt-10 hidden items-center rounded-md bg-black px-2 py-4 font-rogan text-[2rem] font-bold uppercase text-green outline-none focus:outline-none sm:flex">
+                <span className="group absolute flex h-[65px] w-[65px] items-center justify-center overflow-hidden rounded-md bg-green transition-all duration-700 hover:w-[calc(100%-1rem)]">
+                  <div className="animate-arrows hidden gap-5 group-hover:flex">
+                    {arrows.map((_, index) => (
+                      <RightArrow key={index} />
+                    ))}
+                  </div>
+                  <RightArrow className="group-hover:hidden" />
+                </span>
+                <span className="pl-40 pr-24">Join now</span>
+              </button>
+            </Link>
+            <Link
+              href={config.socialMedia.x}
+              target="_blank"
+            >
+              <button className="mx-auto mt-[40%] flex w-full items-center rounded-md border-4 border-main-black bg-green px-4 py-2.5 sm:hidden">
+                <span className="flex-1 font-rogan text-2xl font-bold uppercase text-main-black">
+                  Join now
+                </span>
+                <RightArrow className="h-[18px] w-[18px]" />
+              </button>
+            </Link>
             <p className="mt-4 hidden text-end font-rogan text-lg font-medium leading-[1.125rem] sm:block">
               Join the Elite today
             </p>
