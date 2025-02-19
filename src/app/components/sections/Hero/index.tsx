@@ -161,7 +161,7 @@ export const Hero = () => {
               </button>
             </Link>
             <Link
-              href={config.socialMedia.telegram}
+              href={config.socialMedia.joinNow}
               target="_blank"
             >
               <button className="group rounded-md border border-light-line bg-dark-gray p-3 transition-all duration-500 ease-in-out hover:bg-green">
@@ -206,8 +206,9 @@ export const Hero = () => {
               group
             </h2>
             <Link
-              href={config.socialMedia.x}
+              href={config.socialMedia.joinNow}
               target="_blank"
+              className="block w-fit"
             >
               <button className="relative mt-10 hidden items-center rounded-md bg-black px-2 py-4 font-rogan text-[2rem] font-bold uppercase text-green outline-none focus:outline-none sm:flex">
                 <span className="group absolute flex h-[65px] w-[65px] items-center justify-center overflow-hidden rounded-md bg-green transition-all duration-700 hover:w-[calc(100%-1rem)]">
@@ -222,7 +223,7 @@ export const Hero = () => {
               </button>
             </Link>
             <Link
-              href={config.socialMedia.x}
+              href={config.socialMedia.joinNow}
               target="_blank"
             >
               <button className="mx-auto mt-[40%] flex w-full items-center rounded-md border-4 border-main-black bg-green px-4 py-2.5 sm:hidden">
