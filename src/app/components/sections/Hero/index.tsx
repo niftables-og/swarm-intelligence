@@ -151,7 +151,7 @@ export const Hero = () => {
             alt="Logo"
             className="h-[44px] w-[44px] sm:h-[60px] sm:w-[60px]"
           />
-          <div className="flex items-center gap-3">
+          <div className="z-50 flex items-center gap-3">
             <Link
               href={config.socialMedia.x}
               target="_blank"
@@ -185,7 +185,7 @@ export const Hero = () => {
             <br /> since 2017.
           </h2>
         </div>
-        <div className="absolute left-0 top-0 flex h-full w-full flex-col justify-end p-4 sm:px-12 sm:py-8">
+        <div className="absolute left-0 top-0 z-40 flex h-full w-full flex-col justify-end p-4 sm:px-12 sm:py-8">
           <div>
             <h1 className="font-rogan font-extrabold uppercase text-white ~xs/xl:~text-[3.05rem]/[8rem] ~xs/xl:~leading-[3.05rem]/[8rem]">
               <span className="relative mr-2 text-green sm:mr-4">
